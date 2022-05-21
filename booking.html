@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Бронирование</title>
+	<link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/landing page.css">
+	<title>Главная страница</title>
+</head>
+<body>
+<header>
+	<a href="index.html"><img src="img/lp/logo.png" class="logo"></a><div style="margin-left: 33%;margin-right: auto; display: inline-block;"><h1>Index Drive</h1></div>
+	<nav>
+  		<ul class="topmenu">
+    		<li><a href="" class="active"><img style="height: 14px;"src="img/menu stripes.png"> Меню<span class="fa fa-angle-down"></span></a>
+      			<ul class="submenu">
+        			<li><a href="branches.html">Филиалы</a></li>
+        			<li><a href="booking.html">Бронирование</a></li>
+        			<li><a href="cards.html">Банковские карты</a></li>
+      			</ul>
+    		</li>
+		    <li><a href="register.html">Личный кабинет</a></li>
+  		</ul>
+	</nav>
+</header>
+<center><h2 style="border-bottom: 2px solid darkred; padding-bottom: 1%; max-width: 40%;">Доступны для бронирования</h2></center>
+<div class="frame">
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Chery Tiggo 4</h3>
+		<img src="img/booking/chery tiggo 4.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> J7GM21022L7088322
+		<br><b>Марка:</b> Cherry
+		<br><b>Название авто:</b> Tiggo 4
+		<br><b>Номер:</b> В 228 ОР 777</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>2500 ₽
+		<br>
+		<br><b>Филиал: </b><select>
+			<option>Комсомольский, 100</option>
+			<option>Социалистический, 68</option>
+		</select>
+		<br>
+		<br><button class="open-button" onclick="openForm()">Выбрать</button>
+		<div class="form-popup" id="myForm">
+  		<form action="#" class="form-container">
+		    <h1>Выберите характеристики</h1>
+		    	<b>Марка: </b>
+		    	<select>
+		    		<option>Cherry</option>
+				  	<option>Lada</option>
+				  	<option>Renault</option>
+				  	<option>Hyundai</option>
+				  	<option>Ravon</option>
+				  	<option>Volkswagen</option>
+				  </select>
+				  <br>
+
+				  <br><b>Модель: </b>
+				  <select>
+				  	<option>Любая</option>
+				  	<option>Красивая</option>
+				  	<option>Немножко красивая</option>
+				  	<option>Средненькая</option>
+				  	<option>Такая себе</option>
+				  	<option>Некрасивая</option>
+				  	<option>Совсем некрасивая</option>
+				  	<option>Вообще стрём</option>
+				  	<option>Отечественная</option>
+				  </select>
+				  <br>
+
+				  <br><b>Цвет: </b>
+				  <select>
+				  	<option>Белый</option>
+				  	<option>Чёрный</option>
+				  	<option>Красный</option>
+				  	<option>Серый</option>
+				  	<option>Зелёный</option>
+				  	<option>Синий</option>
+				  </select>
+				  <br>
+
+				  <br><b>Тип двигателя: </b>
+				  <select>
+				  	<option>Бензиновый</option>
+				  	<option>Дизельный</option>
+				  	<option>Электрический</option>
+				  </select>
+				  <br>
+
+				  <br><b>Коробка передач:</b>
+				  <select>
+				  	<option>МКПП</option>
+				  	<option>АКПП</option>
+				  </select>
+				  <br>
+				  <br>
+		    <button type="submit" style="background-color: green;" class="btn">Подтвердить </button>
+		    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+  		</form>
+		</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Datsun Mi-Do</h3>
+		<img src="img/booking/datsun mi-do.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> H7FN32133K8199433
+		<br><b>Марка:</b> Datsun
+		<br><b>Название авто:</b> Mi-Do
+		<br><b>Номер:</b> В 322 ОР 999</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>2450 ₽
+		<br>
+		<br><b>Филиал: </b><select>
+			<option>Социалистический, 68</option>
+			<option>Ленина, 61</option>
+		</select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Hyundai Creta</h3>
+		<img src="img/booking/hyundai creta.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> G8FM22815D1488228
+		<br><b>Марка:</b> Hyundai
+		<br><b>Название авто:</b> Creta
+		<br><b>Номер:</b> В 007 ОР 154</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>3500 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Kia Picanto</h3>
+		<img src="img/booking/kia picanto.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> T2HM24010R4105555
+		<br><b>Марка:</b> Kia
+		<br><b>Название авто:</b> Picanto
+		<br><b>Номер:</b> В 100 ОР 32</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>3250 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Lada Granta</h3>
+		<img src="img/booking/lada granta.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> D2YT15673Y2288358
+		<br><b>Марка:</b> Lada
+		<br><b>Название авто:</b> Granta
+		<br><b>Номер:</b> В 687 ОР 07</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>-1000 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Ravon R2</h3>
+		<img src="img/booking/ravon r2.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> K7OO68742T1546544
+		<br><b>Марка:</b> Ravon
+		<br><b>Название авто:</b> R2
+		<br><b>Номер:</b> В 278 ОР 266</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>1900 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Renault Kaptur</h3>
+		<img src="img/booking/renault kaptur.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> J2BM65498R7340223
+		<br><b>Марка:</b> Renault
+		<br><b>Название авто:</b> Kaptur
+		<br><b>Номер:</b> В 546 ОР 564</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>1500 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Renault Sandero Stepway</h3>
+		<img src="img/booking/renault sandero stepway.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> E8CS16047U2048340
+		<br><b>Марка:</b> Renault
+		<br><b>Название авто:</b> Sandero Stepway
+		<br><b>Номер:</b> В 982 ОР 777</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>1300 ₽
+		<br>
+		<br><b>Филиал: </b><select>
+			<option>Комсомольский, 100</option>
+			<option>Ленина, 61</option>
+		</select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Skoda Rapid</h3>
+		<img src="img/booking/skoda rapid.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> V1TL12034Q0000276
+		<br><b>Марка:</b> Skoda
+		<br><b>Название авто:</b> Rapid
+		<br><b>Номер:</b> У 670 ХТ 777</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>2000 ₽
+		<br>
+		<br><b>Филиал: </b><select><option>Комсомольский, 100</option></select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+	<div class="b_div">
+		<h3 style="border-bottom: 1px solid darkred; padding-bottom: 0.5%; max-width: 60%">Volkswagen Polo</h3>
+		<img src="img/booking/Volkswagen Polo.jpg" width="40%" style="margin-left: 0; display: inline;"><span class="b_text"><b>VIN:</b> P0IZ88800D1024346
+		<br><b>Марка:</b> Volkswagen
+		<br><b>Название авто:</b> Polo
+		<br><b>Номер:</b> В 999 ОР 444</span>
+		<br><b>Дата бронирования:</b><input type="date">
+		<br>
+		<br><b>Дата возврата:</b><input type="date">
+		<br>
+		<br><b>Стоимость бронирования за день: </b>3000 ₽
+		<br>
+		<br><b>Филиал: </b><select>
+			<option>Комсомольский, 100</option>
+			<option>Ленина, 61</option>
+		</select>
+		<br>
+		<button class="open-button" onclick="openForm()">Выбрать</button>
+	</div>
+</div>
+<div>
+	<h2 style="margin-left:7%; border-bottom:2px solid darkred; max-width:20%;">Ваши данные</h2>
+	<span style="margin-left:8%"><b>Имя: </b><input type="text"></span>
+	<br><span style="margin-left:8%"><b>Фамилия: </b><input type="text"></span>
+	<br><span style="margin-left:8%"><b>Отчество: </b><input type="text"></span>
+	<br><span style="margin-left:8%"><b>Номер телефона: </b><input placeholder="+7_"type="number"></span>
+	<br><span style="margin-left:8%"><b>Паспортные данные: </b><input placeholder="1234 123456" type="text"></span>
+	<br><span style="margin-left:8%"><b>Банковская карта: </b><select style="margin-bottom: 0.5%;">
+		<option>Добавить карту</option>
+		<option>****1234</option>
+		<option>****4321</option>
+		</select>
+	</span>
+	<br><span style="margin-left:8%"><b>Дата рождения: </b><input type="date"></span>
+	<br><button style="background: blue;">Сменить тариф</button>
+	<button style="float: left;">Подтвердить бронирование</button>
+</div>
+
+<footer>
+	<div class="f_text">Телефон: 8 (800) 555-35-35
+		<br>Проще позвонить, чем у кого-то угонять.
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Главная страница</a></li>
+			<li><a href="booking.html">Бронирование</a></li>
+			<li><a href="branches.html">Филиалы</a></li>
+			<li><a href="register.html">Личный кабинет</a></li>
+		</ul>
+	</div>
+</footer>
+
+<script>
+	function openForm() {
+  document.getElementById("myForm").style.display = "block"; }
+  function closeForm() {
+  document.getElementById("myForm").style.display = "none";}
+</script>
+
+</body>
+</html>
+</body>
+</html></span>

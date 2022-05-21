@@ -1,0 +1,376 @@
+header {
+	display: block;
+	background: #8B0000;
+	top:  0;
+	height: 5%;
+	width: 100%;
+  font-family: "Arial Black";
+}
+header h1 {
+  color: white;
+  display: inline-block;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier';
+  text-align: center;
+}
+.logo {
+  width:8%;
+  display: inline-block;
+  margin:2% auto 0 3%;
+}
+.h_text {
+}
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+nav {background: #800000;}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: black;text-shadow: 0px 0 1px #808080,0 1px 1px #808080, -1px 0 1px #808080, 0 -1px 1px #808080;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;
+  font-family: 'Arial';
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+section {
+  top: 0;
+  height: 20%;
+  text-align: center;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 3%;
+}
+/* Кнопка */
+{box-sizing: border-box;}
+form {
+  position: relative;
+  width: 40%;
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 3%;
+  border: 2px solid #F08080;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #F08080;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:hover {
+  color: #F9F0DA;
+}
+.s_icon {
+  display: inline-block;
+  width: 90%;
+}
+.news {
+  margin-top: 3%;
+  margin: auto 10% auto 10%;
+}
+.news img {
+  display: block;
+  margin:  0 3% 3%;
+}
+.info {
+  background-color: #f9f9ff;
+  padding: 10px 25px;
+}
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 100%;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
+
+/* Вторая новость */
+
+.info {
+  background-color: #f9f9ff;
+  padding: 10px 25px;
+}
+
+.info__switch1 {
+  display: none;
+}
+
+.info__body1 {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch1:checked~.info__body1 {
+  max-height: 100%;
+}
+
+.info__headline1::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch1:checked~.info__headline1::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline1 {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline1:hover {
+  text-decoration: underline;
+}
+
+/* Третья новость */
+
+.info {
+  background-color: #f9f9ff;
+  padding: 10px 25px;
+}
+
+.info__switch2 {
+  display: none;
+}
+
+.info__body2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch2:checked~.info__body2 {
+  max-height: 100%;
+}
+
+.info__headline2::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch2:checked~.info__headline2::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline2 {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline2:hover {
+  text-decoration: underline;
+}
+
+/* Подвал */
+
+footer {
+  position: absolute;
+  background: #808080;
+  width: 100%;
+  margin: 10% 0 0 0;
+  border-top: 2px solid black;
+}
+.f_text, .f_text p {
+  position: relative;
+  float: right;
+  font-size: 10px;
+  margin-right: 1%;
+  color: white;
+  max-width: 20%;
+  margin-top: 2%;
+}
+
+/* Навигация в подвале */
+
+.vertical-menu {
+  position: relative;
+  float: left;
+  margin-left: 5%;
+  display: inline-block;
+  max-width: auto;
+  margin-top: 2%;
+}
+
+.vertical-menu a {
+  background-color: #696969; /* Серый фон */
+  color: #C0C0C0; /* Silver-текст */
+    display: block; /* Чтобы ссылки отображались друг под другом */
+    padding: 3px; /* Отступы */
+    text-decoration: none; /* Убираем у ссылок подчеркивание */
+}
+
+.vertical-menu a:hover {
+    background-color: #800000; /* Темно-красный фон при наведении курсора */
+}
+
+.vertical-menu a.active {
+    background-color: #B22222; /* Чуть-светлее-красный фон для "активной/текущей" ссылки */
+    color: white;
+}
+.menu ul {
+  list-style: none;
+  margin-left: 3%;
+  margin-top: 1%;
+  background: #696969;
+  max-width: 45%;
+  padding-left: 0.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 0;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1.5%;
+  font-family: Arial;
+  color:  #C0C0C0;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  margin: 0;
+}
+.menu a:hover {
+  background: #800000;
+}
+.menu li {
+  display: inline;
+}

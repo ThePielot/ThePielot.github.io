@@ -1,0 +1,236 @@
+header {
+	display: block;
+	background: #8B0000;
+	top:  0;
+	height: 5%;
+	width: 100%;
+  font-family: "Arial Black";
+}
+header h1 {
+  color: white;
+  display: inline-block;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier';
+  text-align: center;
+}
+.logo {
+  width:8%;
+  display: inline-block;
+  margin:2% auto 0 3%;
+}
+.h_text {
+}
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+nav {background: #800000;}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: black;text-shadow: 0px 0 1px #808080,0 1px 1px #808080, -1px 0 1px #808080, 0 -1px 1px #808080;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;
+  font-family: 'Arial';
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+section {
+  top: 0;
+  height: 20%;
+  text-align: center;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 3%;
+}
+/* Кнопка */
+{box-sizing: border-box;}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 3%;
+  border: 2px solid #F08080;
+  border-radius: 5px;
+  outline: none;
+}
+.s_icon {
+  display: inline-block;
+  width: 90%;
+}
+/* Подвал */
+
+footer {
+  position: absolute;
+  background: #808080;
+  width: 100%;
+  margin: 10% 0 0 0;
+  border-top: 2px solid black;
+}
+.f_text, .f_text p {
+  position: relative;
+  float: right;
+  font-size: 10px;
+  margin-right: 1%;
+  color: white;
+  max-width: 20%;
+  margin-top: 2%;
+}
+
+/* Навигация в подвале */
+
+.menu ul {
+  list-style: none;
+  margin-left: 3%;
+  margin-top: 1%;
+  background: #696969;
+  max-width: 45%;
+  padding-left: 0.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 0;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1.5%;
+  font-family: Arial;
+  color:  #C0C0C0;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  margin: 0;
+}
+.menu a:hover {
+  background: #800000;
+}
+.menu li {
+  display: inline;
+}
+
+/* Регистрация */
+
+h2 {
+  cursor: help;
+  margin: 0;
+  border-bottom: 2px solid #800000;
+  padding: 2.5%;
+  margin-bottom: 10%;
+}
+form {
+  margin: 5% auto;
+  border: #800000 solid 1px;
+  width: 40%;
+  height: 100%;
+  padding: 5% 3% 5% 3%;
+  border-radius: 2%;
+}
+.group {
+  position: relative;
+  margin: 1%;
+  padding: 1.5%;
+}
+input {
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 1px solid #800000;
+}
+input:focus {
+  border: 2px solid #4B0082;
+}
+.group button {
+  margin: 0 auto 3%;
+  border-radius: 10px;
+  cursor:  pointer;
+  padding: 1%;
+  justify-content: middle;
+  color: white;
+  background: #800000;
+  border: none;
+  font-size: 15px;
+  padding: 2% 0 2% 0;
+  width: 50%;
+}
+.group button:hover {
+  background: #B22222;
+}
+.frame {
+  margin: 3%;
+  margin-left: 7%;
+}
+.frame input {
+  margin-left: 1%;
+  max-width:20%;
+  padding: 0.4%;
+  width: 15%;
+  height: 1%;
+  border: 2px solid darkred;
+  border-radius: 2px;
+  outline: none;
+}

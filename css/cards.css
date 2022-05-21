@@ -1,0 +1,321 @@
+header {
+	display: block;
+	background: #8B0000;
+	top:  0;
+	height: 5%;
+	width: 100%;
+  font-family: "Arial Black";
+}
+header h1 {
+  color: white;
+  display: inline-block;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier';
+  text-align: center;
+}
+.logo {
+  width:8%;
+  display: inline-block;
+  margin:2% auto 0 3%;
+}
+.h_text {
+}
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+nav {background: #800000;}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: black;text-shadow: 0px 0 1px #808080,0 1px 1px #808080, -1px 0 1px #808080, 0 -1px 1px #808080;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;
+  font-family: 'Arial';
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+section {
+  top: 0;
+  height: 20%;
+  text-align: center;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 3%;
+}
+/* Кнопка */
+{box-sizing: border-box;}
+
+.s_icon {
+  display: inline-block;
+  width: 90%;
+}
+/* Подвал */
+
+footer {
+  position: absolute;
+  background: #808080;
+  width: 100%;
+  margin: 10% 0 0 0;
+  border-top: 2px solid black;
+}
+.f_text, .f_text p {
+  position: relative;
+  float: right;
+  font-size: 10px;
+  margin-right: 1%;
+  color: white;
+  max-width: 20%;
+  margin-top: 2%;
+}
+
+/* Навигация в подвале */
+
+.menu ul {
+  list-style: none;
+  margin-left: 3%;
+  margin-top: 1%;
+  background: #696969;
+  max-width: 45%;
+  padding-left: 0.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 0;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1.5%;
+  font-family: Arial;
+  color:  #C0C0C0;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  margin: 0;
+}
+.menu a:hover {
+  background: #800000;
+}
+.menu li {
+  display: inline;
+}
+
+/* Регистрация */
+
+.group {
+  position: relative;
+  margin: 1%;
+  padding: 1.5%;
+}
+.group button {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  border-radius: 10px;
+  cursor:  pointer;
+  padding: 1%;
+  justify-content: middle;
+  color: white;
+  background: #800000;
+  border: none;
+  font-size: 15px;
+  padding: 2% 0 2% 0;
+  width: 50%;
+
+}
+.group button:hover {
+  background: #B22222;
+}
+
+/* Форма карты */
+
+.credit-card {
+    width: 35%;
+    height: 100%;
+    margin: 5% auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+}
+
+/* Отступы в форме карты */
+
+.form-header {
+    height: 1%;
+    padding: 6% 5% 0.5%;
+    border-bottom: 1px solid #e1e8ee;
+    margin-bottom: 3%;
+}
+.form-body {
+    height: 100%;
+    padding: 1% 10% 1%;
+}
+
+/* Title */
+.title {
+    margin: 0;
+    color: #5e6977;
+}
+
+/* Common */
+.card-number,
+.cvv-input input,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+.card-number,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month select,
+.year select {
+    color: black;
+}
+
+/* Номер карты */
+.card-number {
+    width: 100%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+}
+
+/* Срок действия */
+.month select,
+.year select {
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: url('caret.png') no-repeat;
+    background-position: 85% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.month select {
+    float: left;
+    margin-top: 3%;
+}
+.year select {
+    float: right;
+    margin-top: 3%;
+}
+
+/* CVV-поле */
+.cvv-input input {
+    float: left;
+    width: 145px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: #fff;
+}
+.cvv-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 3%;
+}
+.cvv-details p {
+    margin-top: 2%;
+    margin: 0;
+}
+
+/* Кнопки! */
+.paypal-btn,
+.proceed-btn {
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-color: transparent;
+    border-radius: 6px;
+}
+.proceed-btn {
+    margin-bottom: 10px;
+    background: #7dc855;
+}
+.paypal-btn a,
+.proceed-btn a {
+    text-decoration: none;
+}
+.proceed-btn a {
+    color: #fff;
+}
